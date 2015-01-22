@@ -35,7 +35,7 @@ static $allowed_input_types = array(
   'vhost'      => '%v %h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\"',
   'logio'      => '%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\ %I %O"',
   'cookie'     => '%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\" \"%{Cookie}i\"',
-  'custom'     => '%t %V %f %h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\"'
+  'custom'     => '%{\"%b %d %H:%M:%S\"}t %V %f %h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\"'
 );
 
 # define output types, client identifiers and attack vectors (don't change!)
